@@ -31,8 +31,9 @@ worker cannot read a local OneDrive file.
    `npm run deploy` after reviewing the first development run.
 
 The private GitHub repository runs type checks and tests on every pull request
-and every push to `main`. Connect its `main` branch under the Trigger.dev
-project's GitHub integration to deploy production automatically after pushes.
+and every push to `main`. A second GitHub Actions workflow deploys Trigger.dev
+production automatically after every push to `main`. Its Trigger.dev personal
+access token is stored as the encrypted `TRIGGER_ACCESS_TOKEN` GitHub secret.
 
 ## Duplicate handling
 
