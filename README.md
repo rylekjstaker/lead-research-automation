@@ -1,7 +1,7 @@
 # Amanecer AI Monday leads
 
-This Trigger.dev task is currently manual-only. It uses three SerpApi Google Maps
-searches, checks every task in the **Amanecer AI Leads**
+This Trigger.dev task runs Mondays at 8:00 a.m. Mountain time. It uses three
+SerpApi Google Maps searches, checks every task in the **Amanecer AI Leads**
 ClickUp List (including closed and archived tasks), and creates up to five new
 lead tasks with a fit score, sources, discovery questions, and a draft outreach
 message for human review.
@@ -34,9 +34,6 @@ The private GitHub repository runs type checks and tests on every pull request
 and every push to `main`. A second GitHub Actions workflow deploys Trigger.dev
 production automatically after every push to `main`. Its Trigger.dev personal
 access token is stored as the encrypted `TRIGGER_ACCESS_TOKEN` GitHub secret.
-
-No cron is declared in the task, so deployments do not create or reactivate a
-recurring schedule. Add a declarative cron only when weekly runs are wanted.
 
 ## Duplicate handling
 

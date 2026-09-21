@@ -147,6 +147,7 @@ async function createLead(token: string, listId: string, business: Business, sco
 
 export const amanecerMondayLeads = schedules.task({
   id: "amanecer-monday-leads",
+  cron: { pattern: "0 8 * * 1", timezone: "America/Denver" },
   queue: { concurrencyLimit: 1 },
   retry: { maxAttempts: 2 },
   run: async () => {
