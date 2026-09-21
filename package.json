@@ -1,0 +1,21 @@
+{
+  "name": "amanecer-monday-leads",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "node --import tsx --test src/trigger/amanecer-leads/lead.test.ts",
+    "dev": "trigger dev",
+    "deploy": "trigger deploy"
+  },
+  "dependencies": {
+    "@trigger.dev/sdk": "4.6.3",
+    "dotenv": "^16.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "trigger.dev": "4.6.3",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.3"
+  }
+}
